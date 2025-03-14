@@ -180,7 +180,7 @@
 //     console.log( `John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!` );
 // } 
 
-
+/*
 // type conversion
 const inputYear = '1991';
 console.log( Number( inputYear ) + 18, inputYear );
@@ -194,3 +194,49 @@ console.log( String( 23 ), 23 );
 // type coercion
 console.log( 'I am ' + 29 + ' years old' );
 console.log( '23' + '10' + 3 );
+console.log( '23' / '2' );
+
+let n = '1' + 1;
+n = n - 1;
+console.log( n );
+*/
+
+// console.log( Boolean( 0 ) );
+// console.log( Boolean( undefined ) );
+// console.log( Boolean( 'ryan' ) );
+// console.log( Boolean( {} ) );
+// console.log( Boolean( null ) );
+
+// const money = 0;
+// if ( money ) {
+//     console.log( "jangan boros kepada uangmu" );
+// } else {
+//     console.log( 'kamu harus mendapatkan pekerjaan' );
+// }
+
+// let height = 10;
+// if ( height ) {
+//     console.log( "height is defined" );
+// } else {
+//     console.log( "height is undefined" );
+// }
+
+const age = '18';
+if ( age === 18 ) console.log( 'kamu sudah menjadi seorang dewasa (strict) ' )
+
+if ( age == 18 ) console.log( 'kamu sudah menjadi seorang dewasa (loose) ' )
+
+const favourite = Number( prompt( 'berapa nomor favoritemu?' ) );
+console.log( favourite );
+console.log( typeof favourite );
+// console.log( Number( favourite ) );
+
+if ( favourite === 23 ) {
+    console.log( 'keren! 23 adalah angka yang bagus ' )
+} else if ( favourite === 4 ) {
+    console.log( '4 juga angka yang keren' )
+} else {
+    console.log( 'bukan nomor 23 dan juga nomor 3 ' )
+}
+
+if ( favourite !== 12 ) console.log( 'kenapa bukan 12?' )
