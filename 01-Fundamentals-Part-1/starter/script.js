@@ -178,7 +178,7 @@
 //     console.log( `Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!` );
 // } else {
 //     console.log( `John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!` );
-// } 
+// }
 
 /*
 // type conversion
@@ -276,16 +276,87 @@ console.log( n );
 // }
 
 // bonus 1
-const scoreDolphins = ( 97 + 112 + 101 ) / 3;
-const scoreKoalas = ( 109 + 95 + 106 ) / 3;
-console.log( scoreDolphins, scoreKoalas );
+// const scoreDolphins = ( 97 + 112 + 101 ) / 3;
+// const scoreKoalas = ( 109 + 95 + 106 ) / 3;
+// console.log( scoreDolphins, scoreKoalas );
 
-if ( scoreDolphins > scoreKoalas && scoreDolphins >= 100 ) {
-    console.log( 'dolphins win the trophy' );
-} else if ( scoreKoalas > scoreDolphins && scoreKoalas >= 100 ) {
-    console.log( 'koalas win the trophy' );
-} else if ( scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100 ) {
-    console.log( 'both win the trophy' );
-} else {
-    console.log( 'no one win the trophy 🏆' );
-}
+// if ( scoreDolphins > scoreKoalas && scoreDolphins >= 100 ) {
+//     console.log( 'dolphins win the trophy' );
+// } else if ( scoreKoalas > scoreDolphins && scoreKoalas >= 100 ) {
+//     console.log( 'koalas win the trophy' );
+// } else if ( scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100 ) {
+//     console.log( 'both win the trophy' );
+// } else {
+//     console.log( 'no one win the trophy 🏆' );
+// }
+
+// const day = 'monday';
+
+// switch ( day ) {
+//     case 'monday':
+//         console.log( 'plan course structure' );
+//         console.log( 'go to coding meetup' );
+//         break
+//     case 'tuesday':
+//         console.log( 'prepare theory videos' );
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log( 'write code examples' );
+//         break
+//     case 'friday':
+//         console.log( 'record videos' );
+//         break
+//     case 'saturday':
+//     case 'sunday':
+//         console.log( 'enjoy the weekend' );
+//         break;
+//     default:
+//         console.log( 'not a valid day' );
+// }
+
+// if ( day === 'monday' ) {
+//     console.log( 'plan course structure' );
+//     console.log( 'go to coding meetup' );
+// } else if ( day === 'tuesday' ) {
+//     console.log( 'prepare theory videos' );
+// } else if ( day === 'wednesday' || day === 'thursday' ) {
+//     console.log( 'write code examples' );
+// } else if ( day === 'friday' ) {
+//     console.log( 'record videos' );
+// } else if ( day === 'saturday' || day === 'sunday' ) {
+//     console.log( 'enjoy the weekend' );
+// } else {
+//     console.log( 'not a valid day' );
+// }
+
+// 3 + 4
+// 1991
+// true && false && !false
+
+// if ( 23 > 10 ) {
+//     const str = '23 is bigger';
+// }
+
+// const me = 'jonas'
+// console.log( `i'm ${2050 - 1996} years old ${me}` );
+
+// const age = 25;
+// // age >= 18 ? console.log( 'i like to drink wine 🍷' ) : console.log( 'i like to drink water 💧' );
+
+// const drink = age >= 18 ? 'wine 🍷' : 'water💧';
+// console.log( drink );
+
+// let drink2;
+// if ( age >= 18 ) {
+//     drink2 = 'wine';
+// } else {
+//     drink2 = 'water';
+// }
+// console.log( drink2 );
+
+// console.log( `i like to drink ${age >= 18 ? 'wine 🍷' : 'water💧'}` );
+
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log( `the bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}` );
