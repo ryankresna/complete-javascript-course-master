@@ -221,22 +221,71 @@ console.log( n );
 //     console.log( "height is undefined" );
 // }
 
-const age = '18';
-if ( age === 18 ) console.log( 'kamu sudah menjadi seorang dewasa (strict) ' )
+// const age = '18';
+// if ( age === 18 ) console.log( 'kamu sudah menjadi seorang dewasa (strict) ' )
 
-if ( age == 18 ) console.log( 'kamu sudah menjadi seorang dewasa (loose) ' )
+// if ( age == 18 ) console.log( 'kamu sudah menjadi seorang dewasa (loose) ' )
 
-const favourite = Number( prompt( 'berapa nomor favoritemu?' ) );
-console.log( favourite );
-console.log( typeof favourite );
-// console.log( Number( favourite ) );
+// const favourite = Number( prompt( 'berapa nomor favoritemu?' ) );
+// console.log( favourite );
+// console.log( typeof favourite );
+// // console.log( Number( favourite ) );
 
-if ( favourite === 23 ) {
-    console.log( 'keren! 23 adalah angka yang bagus ' )
-} else if ( favourite === 4 ) {
-    console.log( '4 juga angka yang keren' )
+// if ( favourite === 23 ) {
+//     console.log( 'keren! 23 adalah angka yang bagus ' )
+// } else if ( favourite === 4 ) {
+//     console.log( '4 juga angka yang keren' )
+// } else {
+//     console.log( 'bukan nomor 23 dan juga nomor 3 ' )
+// }
+
+// if ( favourite !== 12 ) console.log( 'kenapa bukan 12?' )
+
+// const hasDriversLicense = true; // a
+// const hasGoodVision = true; // b
+
+// console.log( hasDriversLicense && hasGoodVision );
+// console.log( hasDriversLicense || hasGoodVision );
+// console.log( !hasDriversLicense, !hasGoodVision );
+
+// if ( hasDriversLicense && hasGoodVision ) {
+//     console.log( "sarah is able to drive" );
+// } else {
+//     console.log( "someone else should drive.." );
+// }
+
+// const isTired = false; // c
+// console.log( hasDriversLicense && hasGoodVision && isTired );
+
+// if ( hasDriversLicense && hasGoodVision && !isTired ) {
+//     console.log( "sarah is able to drive" );
+// } else {
+//     console.log( "someone else should drive.." );
+// }
+
+// const scoreDolphins = ( 96 + 108 + 89 ) / 3;
+// const scoreKoalas = ( 96 + 108 + 89 ) / 3;
+// console.log( scoreDolphins, scoreKoalas );
+
+// if ( scoreDolphins > scoreKoalas ) {
+//     console.log( 'dolphins win the trophy' );
+// } else if ( scoreKoalas > scoreDolphins ) {
+//     console.log( 'koalas win the trophy' );
+// } else if ( scoreDolphins === scoreKoalas ) {
+//     console.log( 'both win the trophy' );
+// }
+
+// bonus 1
+const scoreDolphins = ( 97 + 112 + 101 ) / 3;
+const scoreKoalas = ( 109 + 95 + 106 ) / 3;
+console.log( scoreDolphins, scoreKoalas );
+
+if ( scoreDolphins > scoreKoalas && scoreDolphins >= 100 ) {
+    console.log( 'dolphins win the trophy' );
+} else if ( scoreKoalas > scoreDolphins && scoreKoalas >= 100 ) {
+    console.log( 'koalas win the trophy' );
+} else if ( scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100 ) {
+    console.log( 'both win the trophy' );
 } else {
-    console.log( 'bukan nomor 23 dan juga nomor 3 ' )
+    console.log( 'no one win the trophy 🏆' );
 }
-
-if ( favourite !== 12 ) console.log( 'kenapa bukan 12?' )
