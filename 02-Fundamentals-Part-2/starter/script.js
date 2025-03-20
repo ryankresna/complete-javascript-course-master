@@ -159,3 +159,27 @@
 // const ages = [calcAge( years[0] ), calcAge( years[1] ), calcAge( years[years.length - 1] )];
 // console.log( ages );
 
+const friends = ['michael', 'steven', 'peter'];
+
+// add element
+const newLength = friends.push( 'jay' );
+console.log( friends );
+console.log( newLength );
+
+friends.unshift( 'john' );
+console.log( friends );
+
+// remove element
+friends.pop(); // last
+const popped = friends.pop();
+console.log( popped );
+console.log( friends );
+
+friends.shift(); // first
+console.log( friends );
+
+console.log( friends.indexOf( 'steven' ) );
+console.log( friends.indexOf( 'jonas' ) );
+
+console.log( friends.includes( 'steven' ) );
+console.log( friends.includes( 'jonas' ) );
