@@ -159,27 +159,38 @@
 // const ages = [calcAge( years[0] ), calcAge( years[1] ), calcAge( years[years.length - 1] )];
 // console.log( ages );
 
-const friends = ['michael', 'steven', 'peter'];
+// const friends = ['michael', 'steven', 'peter'];
 
 // add element
-const newLength = friends.push( 'jay' );
-console.log( friends );
-console.log( newLength );
+// const newLength = friends.push( 'jay' );
+// console.log( friends );
+// console.log( newLength );
 
-friends.unshift( 'john' );
-console.log( friends );
+// friends.unshift( 'john' );
+// console.log( friends );
 
 // remove element
-friends.pop(); // last
-const popped = friends.pop();
-console.log( popped );
-console.log( friends );
+// friends.pop(); // last
+// const popped = friends.pop();
+// console.log( popped );
+// console.log( friends );
 
-friends.shift(); // first
-console.log( friends );
+// friends.shift(); // first
+// console.log( friends );
 
-console.log( friends.indexOf( 'steven' ) );
-console.log( friends.indexOf( 'jonas' ) );
+// console.log( friends.indexOf( 'steven' ) );
+// console.log( friends.indexOf( 'jonas' ) );
 
-console.log( friends.includes( 'steven' ) );
-console.log( friends.includes( 'jonas' ) );
+// friends.push( 23 );
+// console.log( friends.includes( 'steven' ) );
+// console.log( friends.includes( 'jonas' ) );
+// console.log( friends.includes( 23 ) );
+
+// const calcTip = function ( bill ) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip( bills[0] ), calcTip( bills[1] ), calcTip( bills[2] )];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log( bills, tips, totals );
