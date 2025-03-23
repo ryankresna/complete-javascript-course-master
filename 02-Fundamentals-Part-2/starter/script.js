@@ -87,75 +87,14 @@
 //     const age = calcAge( birthYear );
 //     const retirement = 65 - age;
 
-//     if ( retirement > 0 ) {
-//         return retirement;
-//         console.log( `${firstName} retires in ${retirement} years` );
-//     } else {
-//         return -1;
-//         console.log( `${firstName} has already retired 🎉` );
-//     }
-// }
-
-// console.log( yearsUntilRetirement( 1996, 'ryan' ) );
-// console.log( yearsUntilRetirement( 1950, 'jonas' ) );
-
-// const mark = {
-//     fullName: 'Mark Miller',
-//     mass: 78,
-//     height: 1.69,
-//     calcBMI: function () {
-//         this.bmi = this.mass / this.height ** 2;
-//         return this.bmi;
-//     }
-// };
-
-// const john = {
-//     fullName: 'John Smith',
-//     mass: 92,
-//     height: 1.95,
-//     calcBMI: function () {
-//         this.bmi = this.mass / this.height ** 2;
-//         return this.bmi;
-//     }
-// };
-
-// mark.calcBMI();
-// john.calcBMI();
-
-// console.log( mark.bmi, john.bmi );
-
-// if ( mark.bmi > john.bmi ) {
-//     console.log( `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})` );
-// } else if ( john.bmi > mark.bmi ) {
-//     console.log( `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})` );
-// }
-
-for ( let rep = 0; rep <= 10; rep++ ) {
-    console.log( `Lifting weights repetition ${rep}` );
+if ( retirement > 0 ) {
+    return retirement;
+    console.log( `${firstName} retires in ${retirement} years` );
+} else {
+    return -1;
+    console.log( `${firstName} has already retired 🎉` );
+}
 }
 
-// let rows1 = 6; // Jumlah baris piramida
-
-// for ( let i = 1; i <= rows1; i++ ) {
-//     let spaces = ' '.repeat( rows1 - i ); // Spasi di kiri
-//     let stars = '*'.repeat( 2 * i - 1 ); // Bintang yang bertambah ganjil
-//     console.log( spaces + stars ); // Gabung spasi dan bintang
-// }
-
-
-
-// let rows2 = 6; // Jumlah baris piramida
-
-// for ( let i = rows2; i >= 1; i-- ) { // Loop dari 6 ke 1
-//     let spaces = ' '.repeat( rows2 - i ); // Spasi tetap sama
-//     let stars = '*'.repeat( 2 * i - 1 ); // Bintang mengecil
-//     console.log( spaces + stars ); // Gabung spasi + bintang
-// }
-
-const jonasArray = [
-    'jonas',
-    'schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['michael', 'peter', 'steven']
-];
+console.log( yearsUntilRetirement( 1996, 'ryan' ) );
+console.log( yearsUntilRetirement( 1950, 'jonas' ) );
