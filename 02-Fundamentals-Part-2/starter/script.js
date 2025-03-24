@@ -130,9 +130,9 @@
 //     console.log( `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})` );
 // }
 
-for ( let rep = 0; rep <= 10; rep++ ) {
-    console.log( `Lifting weights repetition ${rep}` );
-}
+// for ( let rep = 0; rep <= 10; rep++ ) {
+//     console.log( `Lifting weights repetition ${rep}` );
+// }
 
 // let rows1 = 6; // Jumlah baris piramida
 
@@ -157,5 +157,39 @@ const jonasArray = [
     'schmedtmann',
     2037 - 1991,
     'teacher',
-    ['michael', 'peter', 'steven']
+    ['michael', 'peter', 'steven'],
+    true
 ];
+
+const types = [];
+
+for ( let i = 0; i < jonasArray.length; i++ ) {
+    console.log( jonasArray[i], typeof jonasArray[i] );
+
+    types[i] = typeof jonasArray[i];
+}
+
+console.log( types );
+
+const years = [1991, 1996, 2017, 1969, 2020];
+const ages = [];
+
+for ( let i = 0; i < years.length; i++ ) {
+    ages.push( 2037 - years[i] );
+}
+console.log( ages );
+
+// bab continue and break
+console.log( '--- ONLY STRINGS ---' )
+for ( let i = 0; i < jonasArray.length; i++ ) {
+    if ( typeof jonasArray[i] !== 'string' ) continue;
+
+    console.log( jonasArray[i], typeof jonasArray[i] );
+}
+
+console.log( '--- ONLY NUMBER ---' )
+for ( let i = 0; i < jonasArray.length; i++ ) {
+    if ( typeof jonasArray[i] === 'number' ) break;
+
+    console.log( jonasArray[i], typeof jonasArray[i] );
+}
