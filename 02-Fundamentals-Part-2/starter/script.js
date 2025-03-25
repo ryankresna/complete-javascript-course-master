@@ -179,26 +179,27 @@
 // const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 // console.log( bills, tips, totals );
 
-const jonas = {
-    firstName: 'jonas',
-    lastName: 'schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['michael', 'peter', 'steven']
-};
-console.log( jonas );
+// const jonas = {
+//     firstName: 'jonas',
+//     lastName: 'schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['michael', 'peter', 'steven']
+// };
+// console.log( jonas );
 
-const interestedIn = prompt( 'what do you want to know about jonas? choose between firstName, LastName, age, job, and friends' );
-console.log( jonas[interestedIn] );
+// const interestedIn = prompt( 'what do you want to know about jonas? choose between firstName, LastName, age, job, and friends' );
+// console.log( jonas[interestedIn] );
 
-if ( jonas[interestedIn] ) {
-    console.log( jonas[interestedIn] );
-} else {
-    console.log( 'wrong request! choose between firstName, LastName, age, job, and friends' )
-}
+// if ( jonas[interestedIn] ) {
+//     console.log( jonas[interestedIn] );
+// } else {
+//     console.log( 'wrong request! choose between firstName, LastName, age, job, and friends' )
+// }
 
-jonas.location = 'portugal';
-jonas['twitter'] = '@jonasschemdtman';
-console.log( jonas );
+// jonas.location = 'portugal';
+// jonas['twitter'] = '@jonasschemdtman';
+// console.log( jonas );
 
-console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
+// console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
+
