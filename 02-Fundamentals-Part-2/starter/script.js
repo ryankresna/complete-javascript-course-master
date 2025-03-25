@@ -203,3 +203,18 @@
 
 // console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
 
+const jonas = [
+    'jonas',
+    'schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['michael', 'peter', 'steven'],
+    true
+];
+
+// 0, 1, ...4
+// 4, 3, ...0
+
+for ( let i = jonas.length - 1; i >= 0; i-- ) {
+    console.log( i, jonas[i] );
+}
