@@ -195,26 +195,82 @@
 // const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 // console.log( bills, tips, totals );
 
-const jonas = {
-    firstName: 'jonas',
-    lastName: 'schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['michael', 'peter', 'steven']
+// const jonas = {
+//     firstName: 'jonas',
+//     lastName: 'schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['michael', 'peter', 'steven']
+// };
+// console.log( jonas );
+
+// const interestedIn = prompt( 'what do you want to know about jonas? choose between firstName, LastName, age, job, and friends' );
+// console.log( jonas[interestedIn] );
+
+// if ( jonas[interestedIn] ) {
+//     console.log( jonas[interestedIn] );
+// } else {
+//     console.log( 'wrong request! choose between firstName, LastName, age, job, and friends' )
+// }
+
+// jonas.location = 'portugal';
+// jonas['twitter'] = '@jonasschemdtman';
+// console.log( jonas );
+
+// console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
+
+// const jonas = {
+//     firstName: 'jonas',
+//     lastName: 'schmedtmann',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['michael', 'peter', 'steven'],
+//     hasDriversLicense: false,
+
+// calcAge: function ( birthYear ) {
+//     return 2037 - birthYear;
+// }
+
+// calcAge: function () {
+//     console.log( this );
+//     return 2037 - this.birthYear;
+// }
+
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//     }
+// };
+
+// console.log( jonas.calcAge() );
+
+// console.log( jonas.age );
+
+// console.log( jonas.getSummary() );
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
 };
-console.log( jonas );
 
-const interestedIn = prompt( 'what do you want to know about jonas? choose between firstName, LastName, age, job, and friends' );
-console.log( jonas[interestedIn] );
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
 
-if ( jonas[interestedIn] ) {
-    console.log( jonas[interestedIn] );
-} else {
-    console.log( 'wrong request! choose between firstName, LastName, age, job, and friends' )
-}
-
-jonas.location = 'portugal';
-jonas['twitter'] = '@jonasschemdtman';
-console.log( jonas );
-
-console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
+mark.calcBMI();
+john.calcBMI();
+console.log( mark.bmi, john.bmi );
