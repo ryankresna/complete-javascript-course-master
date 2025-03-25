@@ -87,67 +87,51 @@
 //     const age = calcAge( birthYear );
 //     const retirement = 65 - age;
 
-//     if ( retirement > 0 ) {
-//         console.log( `${firstName} retires in ${retirement} years` );
-//         return retirement;
-//     } else {
-//         console.log( `${firstName} has already retired 🎉` );
-//         return -1;
-//     }
+// if ( retirement > 0 ) {
+//     return retirement;
+//     console.log( `${firstName} retires in ${retirement} years` );
+// } else {
+//     return -1;
+//     console.log( `${firstName} has already retired 🎉` );
+// }
 // }
 
 // console.log( yearsUntilRetirement( 1996, 'ryan' ) );
 // console.log( yearsUntilRetirement( 1950, 'jonas' ) );
 
-
-// const calcAverage = ( a, b, c ) => ( a + b + c ) / 3;
-// console.log( calcAverage( 3, 4, 5 ) );
-
-// test 1
-// let scoreDolphins = calcAverage( 44, 23, 71 );
-// let scoreKoalas = calcAverage( 65, 54, 49 );
-// console.log( scoreDolphins, scoreKoalas );
-
-// const checkWinner = function ( avgDolphins, avgKoalas ) {
-//     if ( avgDolphins >= 2 * avgKoalas ) {
-//         console.log( `Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})` );
-//     } else if ( avgKoalas >= 2 * avgDolphins ) {
-//         console.log( `Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})` );
-//     } else {
-//         console.log( 'No team wins.' );
+// const mark = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
 //     }
+// };
+
+// const john = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// };
+
+// mark.calcBMI();
+// john.calcBMI();
+
+// console.log( mark.bmi, john.bmi );
+
+// if ( mark.bmi > john.bmi ) {
+//     console.log( `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})` );
+// } else if ( john.bmi > mark.bmi ) {
+//     console.log( `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})` );
 // }
-// checkWinner( scoreDolphins, scoreKoalas );
 
-// checkWinner( 333, 101 );
-
-// test 2
-// scoreDolphins = calcAverage( 85, 54, 41 );
-// scoreKoalas = calcAverage( 23, 34, 27 );
-// console.log( scoreDolphins, scoreKoalas );
-// checkWinner( scoreDolphins, scoreKoalas );
-
-// const friends = ['michael', 'steven', 'peter', 'joshua'];
-// console.log( friends );
-
-// const y = new Array( 2001, 2002, 2003 );
-
-// console.log( friends[0] );
-// console.log( friends[2] );
-// console.log( friends.length );
-// console.log( friends[friends.length - 1] );
-
-// friends[2] = 'jay';
-// console.log( friends );
-
-// const firstName = 'ryan';
-// const ryan = [firstName, 'kresna', 2037 - 1996, 'worker', friends];
-// console.log( ryan );
-// console.log( ryan.length );
-
-// exercise
-// const calcAge = function ( birthYear ) {
-//     return 2037 - birthYear;
+// for ( let rep = 0; rep <= 10; rep++ ) {
+//     console.log( `Lifting weights repetition ${rep}` );
 // }
 // const years = [1996, 1999, 2001, 2010, 2020];
 
@@ -195,82 +179,26 @@
 // const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 // console.log( bills, tips, totals );
 
-// const jonas = {
-//     firstName: 'jonas',
-//     lastName: 'schmedtmann',
-//     age: 2037 - 1991,
-//     job: 'teacher',
-//     friends: ['michael', 'peter', 'steven']
-// };
-// console.log( jonas );
-
-// const interestedIn = prompt( 'what do you want to know about jonas? choose between firstName, LastName, age, job, and friends' );
-// console.log( jonas[interestedIn] );
-
-// if ( jonas[interestedIn] ) {
-//     console.log( jonas[interestedIn] );
-// } else {
-//     console.log( 'wrong request! choose between firstName, LastName, age, job, and friends' )
-// }
-
-// jonas.location = 'portugal';
-// jonas['twitter'] = '@jonasschemdtman';
-// console.log( jonas );
-
-// console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
-
-// const jonas = {
-//     firstName: 'jonas',
-//     lastName: 'schmedtmann',
-//     birthYear: 1991,
-//     job: 'teacher',
-//     friends: ['michael', 'peter', 'steven'],
-//     hasDriversLicense: false,
-
-// calcAge: function ( birthYear ) {
-//     return 2037 - birthYear;
-// }
-
-// calcAge: function () {
-//     console.log( this );
-//     return 2037 - this.birthYear;
-// }
-
-//     calcAge: function () {
-//         this.age = 2037 - this.birthYear;
-//         return this.age;
-//     },
-//     getSummary: function () {
-//         return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-//     }
-// };
-
-// console.log( jonas.calcAge() );
-
-// console.log( jonas.age );
-
-// console.log( jonas.getSummary() );
-
-const mark = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        this.bmi = this.mass / this.height ** 2;
-        return this.bmi;
-    }
+const jonas = {
+    firstName: 'jonas',
+    lastName: 'schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['michael', 'peter', 'steven']
 };
+console.log( jonas );
 
-const john = {
-    fullName: 'John Smith',
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        this.bmi = this.mass / this.height ** 2;
-        return this.bmi;
-    }
-};
+const interestedIn = prompt( 'what do you want to know about jonas? choose between firstName, LastName, age, job, and friends' );
+console.log( jonas[interestedIn] );
 
-mark.calcBMI();
-john.calcBMI();
-console.log( mark.bmi, john.bmi );
+if ( jonas[interestedIn] ) {
+    console.log( jonas[interestedIn] );
+} else {
+    console.log( 'wrong request! choose between firstName, LastName, age, job, and friends' )
+}
+
+jonas.location = 'portugal';
+jonas['twitter'] = '@jonasschemdtman';
+console.log( jonas );
+
+console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
