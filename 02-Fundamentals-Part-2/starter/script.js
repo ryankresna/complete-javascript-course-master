@@ -203,26 +203,43 @@
 
 // console.log( `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}` );
 
-const jonas = [
-    'jonas',
-    'schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['michael', 'peter', 'steven'],
-    true
-];
+// const jonas = [
+//     'jonas',
+//     'schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['michael', 'peter', 'steven'],
+//     true
+// ];
 
 // 0, 1, ...4
 // 4, 3, ...0
 
-for ( let i = jonas.length - 1; i >= 0; i-- ) {
-    console.log( i, jonas[i] );
-}
+// for ( let i = jonas.length - 1; i >= 0; i-- ) {
+//     console.log( i, jonas[i] );
+// }
 
-for ( let exercise = 1; exercise < 4; exercise++ ) {
-    console.log( `--- starting exercise ${exercise}` );
+// for ( let exercise = 1; exercise < 4; exercise++ ) {
+//     console.log( `--- starting exercise ${exercise}` );
 
-    for ( let rep = 1; rep < 6; rep++ ) {
-        console.log( `Exercise ${exercise}: lifting weight repetition ${rep} 🏋️‍♂️` );
-    }
+//     for ( let rep = 1; rep < 6; rep++ ) {
+//         console.log( `Exercise ${exercise}: lifting weight repetition ${rep} 🏋️‍♂️` );
+//     }
+// }
+
+// for ( let rep = 1; rep <= 10; rep++ ) {
+//     console.log( `lifting weight repetition ${rep}` );
+// }
+
+// let rep = 1;
+// while ( rep <= 10 ) {
+//     console.log( `WHILE: lifting weight repetition ${rep}` );
+//     rep++;
+// }
+
+let dice = Math.trunc( Math.random() * 6 ) + 1;
+while ( dice !== 6 ) {
+    console.log( `you rolled a ${dice}` );
+    dice = Math.trunc( Math.random() * 6 ) + 1;
+    if ( dice === 6 ) console.log( 'loop is about to end' );
 }
